@@ -35,6 +35,7 @@ requirements:
     - torchvision
     - tqdm
     - foolbox
+    - ale-py
 
 test:
   imports:
