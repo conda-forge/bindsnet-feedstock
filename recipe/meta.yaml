@@ -11,22 +11,22 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.7.10,<3.10
+    - python >=3.9,<3.12
     - poetry
+    - setuptools
   run:
     - cython
-    - gym >=0.10.4
     - matplotlib-base
     - numpy
     - opencv
     - pandas
-    - python >=3.7.10,<3.10
+    - python >=3.9,<3.12
     - scikit-image
     - scikit-learn
     - scipy
