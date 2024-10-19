@@ -17,16 +17,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7.10,<3.10
+    - python >=3.9,<3.12
     - poetry
   run:
     - cython
-    - gym >=0.10.4
     - matplotlib-base
     - numpy
     - opencv
     - pandas
-    - python >=3.7.10,<3.10
+    - python >=3.9,<3.12
     - scikit-image
     - scikit-learn
     - scipy
