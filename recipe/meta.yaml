@@ -11,13 +11,13 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - poetry
     - setuptools
   run:
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - opencv
     - pandas
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - scikit-image
     - scikit-learn
     - scipy
@@ -39,6 +39,8 @@ requirements:
     - gymnasium
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - bindsnet
 
