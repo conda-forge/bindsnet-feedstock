@@ -1,5 +1,5 @@
 {% set name = "bindsnet" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: b4d445d5ad5d249720ad09423e9ecb97ea98cceec2ad4a2e7373b17185fde3b9
+  sha256: d1edc51d28469a3c572aab4dc2b734b2e53ad77404136ab241b5b31c5f380cc0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
